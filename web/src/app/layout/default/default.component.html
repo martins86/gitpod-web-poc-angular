@@ -1,8 +1,8 @@
-<app-header></app-header>
+<app-header (toggleSideBarForMe)="sideBarToggle()"></app-header>
 
-<mat-drawer-container>
+<mat-drawer-container [hasBackdrop]="false">
 
-	<mat-drawer>
+	<mat-drawer mode="over" [opened]="sideBarOpen">
 		<app-sidebar></app-sidebar>
 	</mat-drawer>
 
