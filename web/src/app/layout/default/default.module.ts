@@ -1,13 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
 
-import { LoginModule } from './../../pages/login/login.module';
+import { AppRoutingModule } from './../../app-routing.module';
+
 import { SharedModule } from './../../shared/shared.module';
+import { LoginModule } from './../../pages/login/login.module';
 
 import { DefaultComponent } from './default.component';
 import { HomeComponent } from './../../pages/home/home.component';
 import { LoginComponent } from './../../pages/login/login.component';
-
 @NgModule({
   declarations: [
     DefaultComponent,
@@ -16,8 +19,10 @@ import { LoginComponent } from './../../pages/login/login.component';
   ],
   imports: [
     CommonModule,
+    RouterModule,
+    AppRoutingModule,
     SharedModule,
-    LoginModule
+    LoginModule,
   ]
 })
 export class DefaultModule { }
