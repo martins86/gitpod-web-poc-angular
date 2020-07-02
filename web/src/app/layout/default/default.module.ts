@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatDividerModule } from '@angular/material/divider';
 
 import { AppRoutingModule } from './../../app-routing.module';
 
@@ -26,6 +27,7 @@ import { LoginComponent } from './../../pages/login/login.component';
     SharedModule,
     LoginModule,
     MatSidenavModule,
+    MatDividerModule,
   ]
 })
 export class DefaultModule { }
