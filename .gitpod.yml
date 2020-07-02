@@ -20,13 +20,13 @@ tasks:
       npm i -D json-server json-server-auth &&
       json-server db.json -m ./node_modules/json-server-auth --watch --port 3004
   - command: >
-      echo n | npm i -g @angular/cli && 
+      echo n | npm i -g @angular/cli@9.1.9 && 
       npm i -g jshint && 
       npm i -g tslint
   - command: >
       cd ./web &&
       sleep 2 &&
-      echo n | npm i @angular/cli && 
+      echo n | npm i @angular/cli@9.1.9 && 
       sleep 6 &&
       ng serve --host 0.0.0.0 --disableHostCheck
 # Github config
