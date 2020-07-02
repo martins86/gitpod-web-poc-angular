@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { MatSidenavModule } from '@angular/material/sidenav';
+
 import { AppRoutingModule } from './../../app-routing.module';
 
 import { SharedModule } from './../../shared/shared.module';
@@ -23,6 +25,7 @@ import { LoginComponent } from './../../pages/login/login.component';
     AppRoutingModule,
     SharedModule,
     LoginModule,
+    MatSidenavModule,
   ]
 })
 export class DefaultModule { }
