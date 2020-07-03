@@ -16,10 +16,10 @@
           </button>
 				</li>
 				<li>
-					<button mat-button>
+					<button mat-button [matMenuTriggerFor]="menu">
             <mat-icon>person</mat-icon>
           </button>
-					<mat-menu>
+					<mat-menu #menu="matMenu">
 						<button mat-menu-item>
               <mat-icon>launch</mat-icon>
               Perfil
