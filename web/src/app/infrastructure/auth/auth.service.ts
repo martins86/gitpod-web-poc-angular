@@ -23,6 +23,11 @@ export class AuthService {
   }
 
   //TODO: teste
+  logout() {
+    this.clearStorage();
+  }
+
+  //TODO: teste
   setOnStorage(authToken) {
     sessionStorage.setItem('user-token', authToken);
   }
@@ -39,14 +44,17 @@ export class AuthService {
     return authToken !== null && authToken !== undefined;
   }
 
+  //TODO: Componente
   private handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {
-      console.error('An error occurred:', error.error.message);
+      console.error('Ocorreu um erro:', error.error.message);
     } else {
       console.error(
-        `Backend returned code ${error.status}, ` + `body was: ${error.error}`
+        `A Api retornou ${error.status}, ` + `com o corpo: ${error.error}`
       );
     }
-    return throwError('Something bad happened; please try again later.');
+    return throwError(
+      'Algo deu errado, por favor, tente novamente mais tarde.'
+    );
   }
 }
