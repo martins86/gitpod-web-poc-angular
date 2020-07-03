@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
+import { SharedModule } from './../../shared/shared.module';
+
 import { LoginComponent } from './login.component';
 
 import { MatCardModule } from '@angular/material/card';
@@ -17,6 +19,7 @@ import { MatIconModule } from '@angular/material/icon';
     CommonModule,
     HttpClientModule,
     FormsModule,
+    SharedModule,
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
