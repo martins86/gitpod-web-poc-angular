@@ -1,19 +1,11 @@
 {
-  "posts": [
+  "users": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "email": "thiago@email.com",
+      "password": "$2a$10$GTBNqw1LjnCTaFogxUO3hu3rVZ9JxJJABimg15OXMfnwRf5PRYmjq",
+      "firstName": "Thiago",
+      "lastName": "Freitas",
+      "id": 1
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
