@@ -13,11 +13,10 @@ import { LoginModule } from './../../pages/login/login.module';
 
 import { DefaultComponent } from './default.component';
 import { HomeComponent } from './../../pages/home/home.component';
-import { LoginComponent } from './../../pages/login/login.component';
+
 @NgModule({
   declarations: [
     DefaultComponent,
-    LoginComponent,
     HomeComponent
   ],
   imports: [
