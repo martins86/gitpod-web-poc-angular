@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 import { LoginComponent } from './login.component';
@@ -10,13 +11,11 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
-
 @NgModule({
-  declarations: [
-    LoginComponent,
-  ],
+  declarations: [LoginComponent],
   imports: [
     CommonModule,
+    HttpClientModule,
     FormsModule,
     MatCardModule,
     MatFormFieldModule,
@@ -24,8 +23,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatButtonModule,
     MatIconModule,
   ],
-  exports: [
-    LoginComponent,
-  ],
+  exports: [LoginComponent],
+  providers: [],
 })
-export class LoginModule { }
+export class LoginModule {}
