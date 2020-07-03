@@ -7,6 +7,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatListModule } from '@angular/material/list';
 
 import { HeaderComponent } from './../shared/components/header/header.component';
 import { SidebarComponent } from './../shared/components/sidebar/sidebar.component';
@@ -26,6 +27,7 @@ import { FooterComponent } from './../shared/components/footer/footer.component'
     MatIconModule,
     MatButtonModule,
     MatMenuModule,
+    MatListModule,
   ],
   exports: [
     HeaderComponent,
