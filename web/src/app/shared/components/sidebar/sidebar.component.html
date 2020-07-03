@@ -1,1 +1,31 @@
-<p>sidebar works!</p>
+<mat-nav-list>
+	<div class="profile-card">
+		<div class="header">
+      <mat-icon>swap_horizontal_circle</mat-icon>
+			<h2>Controle de Ações</h2>
+			<h4>Thiago - email@email.com</h4>
+		</div>
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <h2 matSubheader>Páginas</h2>
+
+  <a mat-list-item [routerLink]="['/']" routerLinkActive="active">Inicial</a>
+
+  <br />
+
+  <mat-divider></mat-divider>
+
+  <h2 matSubheader>Ferramentas</h2>
+
+  <a mat-list-item [routerLink]="['/import']" routerLinkActive="active">
+    <mat-icon>insert_drive_file</mat-icon>
+    Importar Ações
+  </a>
+  <a mat-list-item [routerLink]="['/list']" routerLinkActive="active">
+    <mat-icon>menu_book</mat-icon>
+    Listar Ações
+  </a>
+
+</mat-nav-list>
