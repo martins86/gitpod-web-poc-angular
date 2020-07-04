@@ -1,10 +1,78 @@
-.flex-end{
+.flex-end {
   flex: 1 1 0%;
   box-sizing: border-box;
   flex-direction: row;
   display: flex;
   place-content: stretch flex-end;
   align-items: stretch;
+}
+
+input#menu {
+  display: none;
+}
+
+.icon {
+  background-color: #3f51b5;
+  cursor: pointer;
+  display: block;
+  height: 20px;
+  padding: 12px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+label.icon {
+  position: fixed;
+  z-index: 200;
+}
+
+.icon .menu,
+.icon .menu::before,
+.icon .menu::after {
+  background-color: #ffffff;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  transition: background ease 0.3s, top ease 0.3s 0.3s, transform ease 0.3s;
+  width: 20px;
+}
+
+.icon:hover .menu,
+.icon:hover .menu::before,
+.icon:hover .menu::after {
+  background-color: #eeeeee;
+}
+
+.icon .menu {
+  left: 12px;
+  top: 22px;
+}
+
+.icon .menu::before {
+  top: -6px;
+}
+
+.icon .menu::after {
+  top: 6px;
+}
+
+#menu:checked + .icon .menu {
+  background: transparent;
+}
+
+#menu:checked + .icon .menu::before {
+  transform: rotate(45deg);
+}
+
+#menu:checked + .icon .menu::after {
+  transform: rotate(-45deg);
+}
+
+#menu:checked + .icon .menu::before,
+#menu:checked + .icon .menu::after {
+  top: 0;
+  transition: top ease 0.3s, transform ease 0.3s 0.3s;
 }
 
 ul {

@@ -1,8 +1,9 @@
 <header>
 	<mat-toolbar color="primary">
-		<button mat-icon-button (click)="toggleSideBar()">
-      <mat-icon>menu</mat-icon>
-    </button>
+		<input type="checkbox" id="menu">
+		<label for="menu" class="icon" (click)="toggleSideBar()">
+      <div class="menu"></div>
+    </label>
 		<div class="flex-end">
 			<ul>
 				<li>
