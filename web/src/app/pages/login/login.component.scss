@@ -34,13 +34,17 @@ mat-card-actions {
 
 mat-form-field,
 mat-card-actions {
-  margin: 0 16px;
+  margin: 6px 16px;
 }
 
-mat-card-title,
-mat-icon {
+mat-card-title {
   color: #3f51b5;
 }
+
+mat-icon {
+  color: #b4b7ca;
+}
+
 
 .mat-card>.mat-card-actions:last-child {
   margin-bottom: 8px;
