@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  // Mock.io
-  urlApi: 'https://5f03542c4c6a2b0016490070.mockapi.io/api/v1',
+  // Mockable.io
+  urlApi: 'https://demo0956902.mockable.io',
   // Json-server
   // urlApi: 'http://localhost:3004/api/v1',
 };

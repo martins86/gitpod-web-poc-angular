@@ -13,7 +13,7 @@ export class AuthService {
 
   //TODO: teste
   login(email, password): Observable<any> {
-    const loginUrl = environment.urlApi + '/signin';
+    const loginUrl = environment.urlApi + '/login';
     const headers = { 'Content-Type': 'application/json' };
     const body = { email, password };
 
