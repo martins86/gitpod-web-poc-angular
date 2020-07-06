@@ -1,5 +1,6 @@
 // Doc - https://github.com/Huachao/vscode-restclient/blob/master/README.md
-@baseUrl = https://5f03542c4c6a2b0016490070.mockapi.io/api/v1
+// https://www.mockable.io/
+@baseUrl = http://demo0956902.mockable.io
 
 
 ####### login - auth
@@ -8,7 +9,7 @@ POST {{baseUrl}}/login HTTP/1.1
 Content-Type: application/json; charset=utf-8
 
 {
-  "email": "thiago@email.com",
+  "email": "admin@email.com",
   "password": "12345"
 }
 
@@ -20,10 +21,9 @@ POST {{baseUrl}}/users HTTP/1.1
 Content-Type: application/json; charset=utf-8
 
 {
-  "email": "thiago@email.com",
+  "email": "admin@email.com",
   "password": "12345",
-  "firstName": "Thiago",
-  "lastName": "Freitas"
+  "firstName": "Admin"
 }
 
 ###
@@ -31,6 +31,13 @@ Content-Type: application/json; charset=utf-8
 ####### users - list of users
 # @name users
 GET {{baseUrl}}/users HTTP/1.1
+Content-Type: application/json; charset=utf-8
+
+###
+
+####### acoes - list of acoes
+# @name acoes
+GET {{baseUrl}}/acoes HTTP/1.1
 Content-Type: application/json; charset=utf-8
 
 ###
