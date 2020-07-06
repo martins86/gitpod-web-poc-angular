@@ -11,8 +11,18 @@
 
   <h2 matSubheader>Páginas</h2>
 
-  <a mat-list-item [routerLink]="['/']" routerLinkActive="active">Inicial</a>
-  <a mat-list-item [routerLink]="['/acoes']" routerLinkActive="active">Ações</a>
+  <a mat-list-item
+    [routerLink]="['/']"
+    routerLinkActive="active"
+    (click)="closeSideBar()"
+    onclick="document.getElementById('menu').checked = false"
+    >Inicial</a>
+  <a mat-list-item
+    [routerLink]="['/acoes']"
+    routerLinkActive="active"
+    (click)="closeSideBar()"
+    onclick="document.getElementById('menu').checked = false"
+    >Ações</a>
 
   <br />
 
@@ -20,7 +30,12 @@
 
   <h2 matSubheader>Ferramentas</h2>
 
-  <a mat-list-item [routerLink]="['/import']" routerLinkActive="active">
+  <a mat-list-item
+    [routerLink]="['/import']"
+    routerLinkActive="active"
+    (click)="closeSideBar()"
+    onclick="document.getElementById('menu').checked = false"
+    >
     <mat-icon>insert_drive_file</mat-icon>
     Importar Ações
   </a>

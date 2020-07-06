@@ -3,7 +3,7 @@
 <mat-drawer-container [hasBackdrop]="false">
 
 	<mat-drawer mode="over" [opened]="sideBarOpen">
-		<app-sidebar></app-sidebar>
+		<app-sidebar (closeSideBarForMe)="closeSideBar()"></app-sidebar>
 	</mat-drawer>
 
 	<mat-drawer-content>
