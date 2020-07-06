@@ -7,5 +7,27 @@
       "lastName": "Freitas",
       "id": 1
     }
+  ],
+  "acoes": [
+    {
+      "id": 1,
+      "tipo": "Ação",
+      "setor": "Financeiro e Outros",
+      "sub-setor": "Serviços Financeiros Diversos",
+      "ativo": {
+        "id": 1,
+        "ticker": "B3SA3"
+      }
+    },
+    {
+      "id": 2,
+      "tipo": "Ação",
+      "setor": "Utilidade Pública",
+      "sub-setor": "Energia Elétrica",
+      "ativo": {
+        "id": 1,
+        "ticker": "TAEE11"
+      }
+    }
   ]
 }
