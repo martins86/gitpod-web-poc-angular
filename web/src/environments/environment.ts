@@ -4,7 +4,10 @@
 
 export const environment = {
   production: false,
-  urlApi: 'http://localhost:3004/api/v1',
+  // Mock.io
+  urlApi: 'https://5f03542c4c6a2b0016490070.mockapi.io/api/v1',
+  // Json-server
+  // urlApi: 'http://localhost:3004/api/v1',
 };
 
 /*
