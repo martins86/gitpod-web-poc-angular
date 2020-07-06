@@ -13,11 +13,13 @@ import { LoginModule } from './../../pages/login/login.module';
 
 import { DefaultComponent } from './default.component';
 import { HomeComponent } from './../../pages/home/home.component';
+import { AcoesComponent } from './../../pages/acoes/acoes.component';
 
 @NgModule({
   declarations: [
     DefaultComponent,
-    HomeComponent
+    HomeComponent,
+    AcoesComponent,
   ],
   imports: [
     CommonModule,
