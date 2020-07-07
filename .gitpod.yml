@@ -23,9 +23,9 @@ tasks:
       npm i karma-spec-reporter ##&&
       ##npm i chromium chromedriver selenium-webdriver &&
   - command: >
-      echo n | npm i -g @angular/cli@9.1.9 &&
       npm i -g jshint &&
       npm i -g tslint &&
+      echo n | npm i -g @angular/cli@9.1.9 &&
       cd ./web &&
       echo n | npm i @angular/cli@9.1.9 &&
       sleep 3 &&
