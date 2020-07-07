@@ -6,11 +6,17 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-1f425f.svg)](https://github.com/martins86/project-angular/blob/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/martins86/project-angular?style=social&label=Star)](https://github.com/martins86/project-angular/)
 
-## Iniciando no Gitpod
+## Iniciando
 
 ```
+  (Start on Gitpod is automatic)
+  
+  Start Project
   ng serve --host 0.0.0.0 --disableHostCheck
-  json-server db.json -m ./node_modules/json-server-auth --watch --port 3004
+  
+  Api / Mock
+  json-server --watch db.json --port 3004
+  demo0956902.mockable.io
   
   configs: .gitpod.yml
 ```
