@@ -20,8 +20,8 @@ tasks:
       json-server --watch db.json --port 3004
   - command: >
       cd ./web &&
-      npm i karma-spec-reporter &&
-      npm i chromium chromedriver selenium-webdriver --save
+      npm i karma-spec-reporter# # &&
+      # npm i chromium chromedriver selenium-webdriver --save
   - command: >
       npm i -g jshint &&
       npm i -g tslint &&
