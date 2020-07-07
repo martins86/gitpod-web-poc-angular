@@ -38,7 +38,9 @@ export class LoginComponent implements OnInit {
   login() {
     if (
       this.emailFormControl.value === '' ||
-      this.passwordFormControl.value === ''
+      this.passwordFormControl.value === '' ||
+      this.emailFormControl.valid === false ||
+      this.passwordFormControl.valid === false
     ) {
       this.emailFormControl.markAsTouched();
       this.passwordFormControl.markAsTouched();
