@@ -6,7 +6,7 @@ import { AuthGuard } from './infrastructure/guard/auth.guard';
 import { DefaultComponent } from './layout/default/default.component';
 import { LoginComponent } from './pages/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
-import { AcoesComponent } from './pages/acoes/acoes.component';
+import { AtivosComponent } from './pages/ativos/ativos.component';
 
 const routes: Routes = [
   {
@@ -25,8 +25,8 @@ const routes: Routes = [
         canActivate: [AuthGuard],
       },
       {
-        path: 'acoes',
-        component: AcoesComponent,
+        path: 'ativos',
+        component: AtivosComponent,
         canActivate: [AuthGuard],
       },
       {

@@ -17,6 +17,8 @@ export class SidebarComponent implements OnInit {
 
   //TODO: test
   closeSideBar() {
+    let menu = document.getElementById('menu');
+        menu['checked'] = false;
     this.closeSideBarForMe.emit();
   }
 }

@@ -2,7 +2,7 @@
 	<div class="profile-card">
 		<div class="header">
       <mat-icon>swap_horizontal_circle</mat-icon>
-			<h2>Controle de Ações</h2>
+			<h2>Controle de Ativos</h2>
 			<h4>Admin - email@email.com</h4>
 		</div>
   </div>
@@ -15,14 +15,12 @@
     [routerLink]="['/']"
     routerLinkActive="active"
     (click)="closeSideBar()"
-    onclick="document.getElementById('menu').checked = false"
     >Inicial</a>
   <a mat-list-item
-    [routerLink]="['/acoes']"
+    [routerLink]="['/ativos']"
     routerLinkActive="active"
     (click)="closeSideBar()"
-    onclick="document.getElementById('menu').checked = false"
-    >Ações</a>
+    >Ativos</a>
 
   <br />
 
@@ -34,10 +32,9 @@
     [routerLink]="['/import']"
     routerLinkActive="active"
     (click)="closeSideBar()"
-    onclick="document.getElementById('menu').checked = false"
     >
     <mat-icon>insert_drive_file</mat-icon>
-    Importar Ações
+    Importar Ativos
   </a>
 
 </mat-nav-list>

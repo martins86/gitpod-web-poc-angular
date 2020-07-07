@@ -34,9 +34,9 @@ Content-Type: application/json; charset=utf-8
 
 ###
 
-####### acoes - list of acoes
-# @name acoes
-GET {{baseUrl}}/acoes HTTP/1.1
+####### ativos - list of ativos
+# @name ativos
+GET {{baseUrl}}/ativos HTTP/1.1
 Content-Type: application/json; charset=utf-8
 
 ###
