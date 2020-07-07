@@ -2,6 +2,7 @@
   "editor.autoSave": "off",
   "editor.trimAutoWhitespace": false,
   "editor.renderWhitespace": "all",
+  "editor.formatOnSave": false,
 
   "diffEditor.ignoreTrimWhitespace": true
 }
