@@ -10,12 +10,19 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatListModule } from '@angular/material/list';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatStepperModule } from '@angular/material/stepper';
 
 import { HeaderComponent } from './../shared/components/header/header.component';
 import { SidebarComponent } from './../shared/components/sidebar/sidebar.component';
 import { FooterComponent } from './../shared/components/footer/footer.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import { SnackBarComponent } from './components/snack-bar/snack-bar.component';
+import { CardStepperComponent } from './components/card-stepper/card-stepper.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +31,7 @@ import { SnackBarComponent } from './components/snack-bar/snack-bar.component';
     FooterComponent,
     LoadingComponent,
     SnackBarComponent,
+    CardStepperComponent,
   ],
   imports: [
     CommonModule,
@@ -36,6 +44,12 @@ import { SnackBarComponent } from './components/snack-bar/snack-bar.component';
     MatListModule,
     MatProgressSpinnerModule,
     MatSnackBarModule,
+    MatCardModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatSelectModule,
+    MatStepperModule,
   ],
   exports: [
     HeaderComponent,
@@ -43,6 +57,7 @@ import { SnackBarComponent } from './components/snack-bar/snack-bar.component';
     FooterComponent,
     LoadingComponent,
     SnackBarComponent,
+    CardStepperComponent,
   ],
 })
 export class SharedModule {}

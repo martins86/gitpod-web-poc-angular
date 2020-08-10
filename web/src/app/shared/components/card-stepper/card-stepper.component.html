@@ -1,0 +1,40 @@
+<mat-card>
+  <mat-vertical-stepper [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="assetsTickerFormGroup">
+      <form [formGroup]="assetsTickerFormGroup">
+        <ng-template matStepLabel>Digite o Ticker</ng-template>
+        <mat-form-field>
+          <mat-label>Ticker</mat-label>
+          <input matInput placeholder="ex: B3SA3 ou HGLG11" formControlName="assetsTickerValidate" required>
+        </mat-form-field>
+        <div>
+          <button mat-button matStepperNext>Próximo</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="assetsTypeFormGroup">
+      <form [formGroup]="assetsTypeFormGroup">
+        <ng-template matStepLabel>Escolha o Tipo</ng-template>
+        <mat-form-field>
+          <mat-label>Selecione</mat-label>
+          <mat-select matInput formControlName="assetsTypeValidate" required>
+            <mat-option value="acao">Ação</mat-option>
+            <mat-option value="fii">FII</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <div>
+          <button mat-button matStepperPrevious>Valtar</button>
+          <button mat-button matStepperNext>Próximo</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Finalizar</ng-template>
+      <p>Deseja cadastrar essas informações?</p>
+      <div>
+        <button mat-button matStepperPrevious>Voltar</button>
+        <button mat-button (click)="stepper.reset()">Resetar</button>
+      </div>
+    </mat-step>
+  </mat-vertical-stepper>
+</mat-card>
