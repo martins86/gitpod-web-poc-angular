@@ -6,7 +6,7 @@ import { AuthGuard } from './infrastructure/guard/auth.guard';
 import { DefaultComponent } from './layout/default/default.component';
 import { LoginComponent } from './pages/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
-import { AtivosComponent } from './pages/ativos/ativos.component';
+import { FinancialAssetsComponent } from './pages/financial-assets/financial-assets.component';
 
 const routes: Routes = [
   {
@@ -25,8 +25,8 @@ const routes: Routes = [
         canActivate: [AuthGuard],
       },
       {
-        path: 'ativos',
-        component: AtivosComponent,
+        path: 'financial-assets',
+        component: FinancialAssetsComponent,
         canActivate: [AuthGuard],
       },
       {
