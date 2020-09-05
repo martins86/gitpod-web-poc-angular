@@ -1,0 +1,11 @@
+<mat-form-field appearance="fill">
+  <mat-label>Selecione a Opção</mat-label>
+  <mat-select [(value)]="selected">
+    <mat-option>None</mat-option>
+    <mat-option value="option1">Opção 1</mat-option>
+    <mat-option value="option2">Opção 2</mat-option>
+    <mat-option value="option3">Opção 3</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<p>Você escolheu: {{selected}}</p>

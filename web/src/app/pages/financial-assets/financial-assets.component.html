@@ -1,5 +1,38 @@
 <h2>Ativos</h2>
 
+<!-- <mat-divider></mat-divider>
+
+<app-card-stepper></app-card-stepper> -->
+
+
 <mat-divider></mat-divider>
 
-<app-card-stepper></app-card-stepper>
+<div class="filter">
+  <div class="title">
+    <h2>Consultar</h2>
+  </div>
+
+  <div class="filter-content">
+
+    <div class="op-one">
+      <app-select-options></app-select-options>
+    </div>
+    <div class="date-one">
+      <app-data-picker></app-data-picker>
+    </div>
+    <div class="date-two">
+      <app-data-picker></app-data-picker>
+    </div>
+    <div class="op-two">
+      <app-select-options></app-select-options>
+    </div>
+    <div>
+      <button mat-raised-button color="primary">Buscar</button>
+    </div>
+
+  </div>
+
+</div>
+<div>
+  <app-table-full></app-table-full>
+</div>

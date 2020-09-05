@@ -1,3 +1,32 @@
 mat-divider {
-  padding-bottom: 25px;
+  // padding-bottom: 25px;
 }
+
+.filter {
+  margin: 0 auto;
+  padding: 12px 16px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid silver;
+}
+
+.title {
+
+}
+
+.filter-content {
+  width: 100%;
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.op-one,
+.date-one,
+.date-two,
+.op-two {
+  margin-right: 14px;
+}
+
