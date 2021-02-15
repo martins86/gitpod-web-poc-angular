@@ -22,9 +22,7 @@ tasks:
       npm i -g tslint &&
       echo n | npm i -g @angular/cli@9.1.9 &&
       cd ./web &&
-      npm i karma-spec-reporter &&
-      npm i chromium chromedriver selenium-webdriver --save
-      echo n | npm i @angular/cli@9.1.9 &&
+      npm i &&
       sleep 3 &&
       ng serve --host 0.0.0.0 --disableHostCheck
 
