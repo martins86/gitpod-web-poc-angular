@@ -18,12 +18,15 @@ tasks:
       npm i json-server@"^0.16.3" &&
       json-server --watch db.json --port 3004
   - command: >
-      npm i -g jshint &&
-      npm i -g tslint@"~6.1.0" &&
-      echo n | npm i -g @angular/cli@9.1.9 &&
       cd ./web &&
-      npm i &&
-      sleep 3 &&
+      echo n | npm i -g @angular/cli@"^9.1.9" && 
+      npm i -g jshint && 
+      npm i -g tslint@"~6.1.0"
+  - command: >
+      cd ./web &&
+      sleep 2 &&
+      echo n | npm i @angular/cli@"^9.1.9" && 
+      sleep 6 &&
       ng serve --host 0.0.0.0 --disableHostCheck
 
 # Github config
