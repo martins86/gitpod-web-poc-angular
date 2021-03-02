@@ -14,11 +14,11 @@ tasks:
   - before: export NG_CLI_ANALYTICS=ci
     command: >
       cd ./web &&
-      npm i -g json-server &&
-      npm i json-server &&
+      npm i -g json-server@"^0.16.3" &&
+      npm i json-server@"^0.16.3" &&
       json-server --watch db.json --port 3004
   - command: >
-      npm i -g jshint &&
+      npm i -g jshint@"~6.1.0" &&
       npm i -g tslint &&
       echo n | npm i -g @angular/cli@9.1.9 &&
       cd ./web &&
